@@ -7,7 +7,7 @@ require 'site_prism'
 require 'httparty'
 
 Capybara.configure do |c|
-  c.default_max_wait_time = 5
+  c.default_max_wait_time = 3
   c.default_driver = :selenium_chrome
   c.app_host = 'https://www.ze.delivery/'
   Capybara.page.driver.browser.manage.window.maximize
